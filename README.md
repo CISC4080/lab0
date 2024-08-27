@@ -28,12 +28,16 @@ Output i, time elapsed, result of Fib(i)
 
 4. Pay attention to the following requirement on style and documentation:
    * Add comments to your code in the beginning:
+     ```
       /* Project Description: measuring running time of Fib(n)
           Author:
           Last modification time:
           Known bugs: fib() will overflow the int type
       */
-* comments all your function, e.g.,
+     ```
+     
+   * comments all your function, e.g.,
+   ```
 /* a function template for sorting an array of T with the given len
   assumping: type T has supported comparison operators
   @param a: array to be sorted
@@ -53,8 +57,10 @@ void bubblesort (T a[], int len)
 for (int i=0; i<end_index-1;i++)
      if (a[i] > a[i+1])
        swap (a[i], a[i+1])
+```
 * Check the indentation and fix any issues:
 In the following program, each statement's indentation level is marked in the comment:
+```
 #include <iostream>
 using namespace std;
 int main()                    //indentation level 0
@@ -82,6 +88,7 @@ if(b==0) return a;
       //level 3
 // align with matching }
 // align with matching {
+```
 
 ## Submission: 
 
