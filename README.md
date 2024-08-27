@@ -43,7 +43,8 @@ Output i, time elapsed, result of Fib(i)
   @param a: array to be sorted
   @param len: the length of array a, the valid index range is 0...len-1
   @precondition: a has been filled with elements 0...len-1
-len issettobethelenghtofa @postcondition: a[0]<=a[1]<=a[2]<=....<=a[len-1]
+       len is set to be the lenght of a
+  @postcondition: a[0]<=a[1]<=a[2]<=....<=a[len-1]
  */
 template <class T>
 void bubblesort (T a[], int len)
