@@ -1,26 +1,33 @@
-Goal:
-CISC4080 Lab0 Fall 2021
+# CISC4080 lab1
+
+## Goal:
+
 1. Coding style requirement
-2. Download two example codes learnt in class, adapt them to measure running time under
-varying input size, n.
-3. Submitting your code on autograder
-Details: Here is a step-by-step guide to finish this lab:
+2. Download two example codes learnt in class, adapt them to measure running time under varying input size, n.
+3. Practice submitting your code on autograder
+
+## Starter Code: 
+
+
+## Details: 
+
+Here is a step-by-step guide to finish this lab:
+
 1. Please bookmark the following google folder, which contains a set of tutorials (using emacs/vi, Linux commands, how to submit code, transfer files...):
 https://drive.google.com/drive/folders/1YeHbzgJn5FyZnRuirHjnoVL0nQX6BEr1?
 usp=sharing
-2. Download the following two example codes:
-https://storm.cis.fordham.edu/zhang/cs4080/Demo/Fib.cpp https://storm.cis.fordham.edu/zhang/cs4080/Demo/Fib_loop.cpp
-Or, if you have storm account, you can use scp command from your terminal (mac), or
-using MobaXterm. The code is located at the following folder:
-~zhang/public_html/cs4080/Demo/
-3. Modify the code so that it prompts the user to select which version of fibonacci calculator to use (Recursive or Iterative), and then:
+2. Modify the code so that it prompts the user to select which version of fibonacci calculator to use (Recursive or Iterative), and then:
+
+```
 For i=1 to 50:
 Get the current system time
 Call selected version of Fib function, passing n=i as parameter Get the current system time
 Calculate the time elapsed,
 Output i, time elapsed, result of Fib(i)
+```
+
 4. Pay attention to the following requirement on style and documentation:
-5. * Add comments to your code in the beginning:
+   * Add comments to your code in the beginning:
       /* Project Description: measuring running time of Fib(n)
           Author:
           Last modification time:
@@ -75,11 +82,21 @@ if(b==0) return a;
       //level 3
 // align with matching }
 // align with matching {
-5. Submit your program to this page:
+
+## Submission: 
+
+Submit your program to this page:
 https://storm.cis.fordham.edu:8443/web/project/167?current_tab=my_submissions
-Note that your file needs to be named lab0_fib.cpp (case sensitive). The program will be automatically compiled using command:
+Note that your file needs to be named lab0_fib.cpp (case sensitive). 
+
+The program will be automatically compiled using command:
+```
 g++ lab0_fib.cpp
+```
+
 If your program does not compile, you will see the error message, and your submission is rejected. Otherwise, the code is submitted, and the grader will hand grade based upon the rubrics outlined in 6.
-You can submit up to 25 times for this lab, as we are getting familiar with the programming/submission environment. (The daily limit is 9 submissions per day).
+You can submit up to 25 times for this lab, as we are getting familiar with the programming/submission environment. 
+
+(The daily limit is 9 submissions per day).
 Refer to this how-to tutorial in the google driver: https://docs.google.com/document/d/13Fr5F7D_nz7ycolUPpmAmriVu6XVdTGy/edit?
 usp=sharing&ouid=103223134137508100592&rtpof=true&sd=true
