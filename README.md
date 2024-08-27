@@ -52,12 +52,14 @@ void bubblesort (T a[], int len)
       // after one bubble-up, end_index decreased by one
       for (int end_index=len-1; end_index>0;end_index --)
       {
-} }
-  //bubble up largest element in a[0...end_index]
-for (int i=0; i<end_index-1;i++)
-     if (a[i] > a[i+1])
-       swap (a[i], a[i+1])
+          //bubble up largest element in a[0...end_index]
+          for (int i=0; i<end_index-1;i++)
+             if (a[i] > a[i+1])
+                swap (a[i], a[i+1])
+      }
+}
 ```
+
 * Check the indentation and fix any issues:
 In the following program, each statement's indentation level is marked in the comment:
 ```
@@ -66,34 +68,31 @@ using namespace std;
 int main()                    //indentation level 0
 {
          // take a line, and align with the function header and matching }
-int a, b;                  //level 1
-// enter value of a and b
-cout <<"Enter a and b:";   //level 1
-cin >> a >> b;       //level 1
-}
-// calculate the GCD (greatest common division of a and b
-while( 1 )                 //level 1
-{
-}
-//opening brace take a line, align with while and the matching }
-a = a % b; if(a==0)
-   return b;
-b = b % a;
-if(b==0) return a;
-//indentation level 2
-      //level 2
-      //level 3
-//level 2
-      //level 2
-      //level 3
-// align with matching }
-// align with matching {
+    int a, b;                  //level 1
+    // enter value of a and b
+    cout <<"Enter a and b:";   //level 1
+    cin >> a >> b;       //level 1
+   
+   // calculate the GCD (greatest common division of a and b
+   while( 1 )                 //level 1
+   { //opening brace take a line, align with while and the matching }
+       a = a % b;             //level 2
+       if(a==0)               //level 2 
+           return b;          //level 3
+      b = b % a;              //level 2 
+      if(b==0)                //level 2 
+          return a;           //level 3 
+   } //align with the matching {
+} //align with the matching {
 ```
 
 ## Submission: 
 
 Submit your program to this page:
+```
 https://storm.cis.fordham.edu:8443/web/project/167?current_tab=my_submissions
+```
+
 Note that your file needs to be named lab0_fib.cpp (case sensitive). 
 
 The program will be automatically compiled using command:
